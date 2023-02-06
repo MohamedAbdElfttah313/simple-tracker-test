@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/PictureImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/StaticTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing=".06"
+        android:text="Timestamp"
+        android:textColor="#969696"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PictureImageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/TimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="N/A"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/StaticTimeTextView"
+        app:layout_constraintStart_toStartOf="@+id/StaticTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/StaticTimeTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/StaticBatteryChargingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing=".06"
+        android:text="Battery Charging ?"
+        android:textColor="#969696"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/TimeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/BatteryChargingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="N/A"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/StaticBatteryChargingView"
+        app:layout_constraintStart_toStartOf="@+id/StaticBatteryChargingView"
+        app:layout_constraintTop_toBottomOf="@+id/StaticBatteryChargingView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/StaticBatteryPercentageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing=".06"
+        android:text="Battery Percentage"
+        android:textColor="#969696"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/TimeTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/BatteryPercentageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="N/A"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/StaticBatteryPercentageView"
+        app:layout_constraintStart_toStartOf="@+id/StaticBatteryPercentageView"
+        app:layout_constraintTop_toBottomOf="@+id/StaticBatteryPercentageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/StaticInternetStateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing=".06"
+        android:text="Internet Availability"
+        android:textColor="#969696"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/TimeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BatteryChargingView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/InternetStateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="N/A"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/StaticInternetStateView"
+        app:layout_constraintStart_toStartOf="@+id/StaticInternetStateView"
+        app:layout_constraintTop_toBottomOf="@+id/StaticInternetStateView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/StaticIMEIView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing=".06"
+        android:text="IMEI"
+        android:textColor="#969696"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/BatteryPercentageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/IMEIView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="N/A"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/StaticIMEIView"
+        app:layout_constraintStart_toStartOf="@+id/StaticIMEIView"
+        app:layout_constraintTop_toBottomOf="@+id/StaticIMEIView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/StaticLocationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing=".06"
+        android:text="Location"
+        android:textColor="#969696"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/TimeTextView"
+        app:layout_constraintStart_toStartOf="@+id/TimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/InternetStateView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/LocationView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="N/A"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/StaticLocationView"
+        app:layout_constraintStart_toStartOf="@+id/StaticLocationView"
+        app:layout_constraintTop_toBottomOf="@+id/StaticLocationView" />
+
+    <android.widget.Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8D85FB"
+        android:onClick="start"
+        android:text="Start Service"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocationView"
+        app:layout_constraintVertical_bias="1" />
+
+    <android.widget.Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8D85FB"
+        android:onClick="capture"
+        android:text="Capture Now"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/LocationView"
+        app:layout_constraintVertical_bias="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="624dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/IntervalEdittext"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="15"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <android.widget.Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#85FB95"
+        android:text="Set Interval"
+        android:onClick="setNewInterval"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

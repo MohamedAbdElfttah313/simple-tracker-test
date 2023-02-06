@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "753144136805",
+    "project_id": "secquralse-task-336cf",
+    "storage_bucket": "secquralse-task-336cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753144136805:android:ac2869c942799d84cc328c",
+        "android_client_info": {
+          "package_name": "com.example.secquralsetask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753144136805-87dru84d10m0bd4rflbcvht4mjt3pl4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPXTOHE1xKnD3rdIgLa1Qx10NQ0duPLhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753144136805-87dru84d10m0bd4rflbcvht4mjt3pl4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
